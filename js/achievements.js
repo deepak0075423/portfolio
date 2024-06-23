@@ -1,6 +1,6 @@
 $(document).ready(function() {
     function showSlide(achievements) {
-        // Remove active class from all achievements and add to the specified one
+        // Remove active class from all achievementss and add to the specified one
         $('.achievements').removeClass('active');
         $('.achievements[data-achievements="' + achievements + '"]').addClass('active');
         
@@ -22,6 +22,7 @@ $(document).ready(function() {
     }).get();
     
     var currentIndex = achievementss.indexOf(1);
+    var direction = 1;
     var autoSlideInterval = setInterval(function() {
         currentIndex += direction;
         if (currentIndex >= achievementss.length) {
