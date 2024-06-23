@@ -659,6 +659,18 @@ input[type='checkbox'] {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 } 
+.basic-5 {
+	padding-bottom: 1rem;
+}
+
+.basic-5 .h2-heading {
+	margin-bottom: 0.75rem;
+	text-align: center;
+}
+.basic-5 .p-heading {
+	margin-bottom: 4rem;
+	text-align: center;
+}
 /* end of hover animation */
 
 
