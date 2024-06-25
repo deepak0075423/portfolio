@@ -1305,10 +1305,10 @@ a:hover.back-to-top {
     cursor: pointer;
     padding: 10px;
     border-radius: 50%;
-    background-color: white;
+    background-color: #ccc;
     transition: background-color 0.3s, color 0.3s;
-    width: 40px;
-    height: 40px;
+    width: 10px;
+    height: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1320,6 +1320,13 @@ a:hover.back-to-top {
 .achievements.active {
     background-color: blue;
     color: white;
+}
+
+.num {
+	position: absolute;
+	top: -210%;
+	font-size: 35px;
+	font-weight: 600;
 }
 
 .content .slide {
