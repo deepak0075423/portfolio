@@ -586,7 +586,34 @@ input[type='checkbox'] {
 	letter-spacing: 1px;
 }
 
+.success {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+    margin-left: -15px;
+}
 
+.basic-2 .image-container {
+	margin-bottom: 1rem;
+}
+
+/* Hover Animation */
+.basic-2 .image-container {
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.basic-2 .image-container img {
+	margin: 0;
+	transition: all 0.2s;
+}
+
+.basic-2 .image-container:hover img {
+	-moz-transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+} 
 /*******************/
 /*     Details     */
 /*******************/
@@ -977,7 +1004,41 @@ a:hover.back-to-top {
 /*     Media Queries     */
 /*************************/	
 /* Min-width 768px */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+
+	.timeline-slider {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.timeline {
+		flex-direction: column;
+		gap: 2rem;
+		margin-bottom: 0px !important;
+	}
+
+	.timeline::before {
+		/* display: none !important; */
+    height: 100% !important;
+		width: 2px !important;
+		left: 50% !important;
+		top: 0% !important;
+	}
+
+	.timeline-slider .content {
+		width: 80%;
+	}
+
+	.num {
+    font-size: 15px !important;
+		top: -150% !important;
+		left: -200%;
+	}
+
+	.num.active {
+		font-size: 20px !important;
+		top: -70% !important;
+	}
 
 	/* Header */
 	.header {
@@ -1303,12 +1364,12 @@ a:hover.back-to-top {
 
 .achievements {
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
     border-radius: 50%;
     background-color: #ccc;
     transition: background-color 0.3s, color 0.3s;
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1320,13 +1381,21 @@ a:hover.back-to-top {
 .achievements.active {
     background-color: blue;
     color: white;
+		height: 15px;
+		width: 15px;
+}
+
+.achievements .num.active {
+	font-size: 30px;
+	color: blue;
 }
 
 .num {
 	position: absolute;
-	top: -210%;
-	font-size: 35px;
+	top: -400%;
+	font-size: 25px;
 	font-weight: 600;
+	transition: all 0.3s;
 }
 
 .content .slide {

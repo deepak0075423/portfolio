@@ -2,7 +2,10 @@ $(document).ready(function() {
     function showSlide(achievements) {
         // Remove active class from all achievementss and add to the specified one
         $('.achievements').removeClass('active');
+        $('.num').removeClass('active');
         $('.achievements[data-achievements="' + achievements + '"]').addClass('active');
+        $('.achievements[data-achievements="' + achievements + '"] .num').addClass('active');
+
         
         // Show the corresponding slide
         $('.slide').removeClass('active');
