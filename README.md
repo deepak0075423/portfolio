@@ -4,10 +4,10 @@ and experience using HTML, CSS, and JavaScript.
 
 
 ## Table of Contents
-Introduction
-Features
-Technologies Used
-Setup and Installation
+- Introduction
+- Features
+- Technologies Used
+- Setup and Installation
 
 
 ## Introduction
@@ -28,9 +28,9 @@ A simple contact form for visitors to get in touch with me.
 
 
 ## Technologies Used
-HTML: For the basic structure of the website.
-CSS: For styling and layout.
-JavaScript: For interactive elements and functionality.
+- HTML: For the basic structure of the website.
+- CSS: For styling and layout.
+- JavaScript: For interactive elements and functionality.
 
 
 ## Setup and Installation
